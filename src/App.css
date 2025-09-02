@@ -14,19 +14,18 @@ body {
   margin-bottom: 20px;
 }
 
-button {
+button, select, input[type="range"] {
   margin: 5px;
-  padding: 10px 15px;
+  padding: 8px 12px;
   border: none;
   background: steelblue;
   color: white;
   font-size: 14px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s ease;
 }
 
-button:disabled {
+button:disabled, select:disabled, input:disabled {
   background: gray;
   cursor: not-allowed;
 }
@@ -39,15 +38,16 @@ button:hover:enabled {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  gap: 3px;
-  height: 300px;
+  gap: 2px;
+  height: 350px;
   border: 1px solid #ccc;
   background: white;
   padding: 10px;
+  margin-top: 20px;
 }
 
 .bar {
-  width: 20px;
+  flex: 1;
   background: steelblue;
-  transition: height 0.2s ease;
+  transition: height 0.2s ease, background 0.2s ease;
 }
